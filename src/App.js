@@ -8,7 +8,7 @@ import { dataSet } from "./constants";
 const App = () => {
 
   return (<>
-          <SearchBar data={dataSet}/>
+          <SearchBar data={dataSet} />
         </>)
 }
 
