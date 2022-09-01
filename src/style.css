@@ -4,4 +4,40 @@
     padding: 0;
     font-family: 'Montserrat', 'Poppins', Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    --myWhite: #FFFFFF;
+    --myDarkGreen: #2E424E;
+}
+.main {
+    width: 100%;
+    background-image: url('./images/wallpaper.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+}
+.main img {
+    position: absolute;
+    width: 1.8em;
+    height: 1.8em;
+    top: 0.35em;
+    right: 0.4em;
+}
+.main label {
+    position: relative;
+}
+.main input {
+    width: 15em;
+    height: 3em;
+    border-radius: 5px;
+}
+.main div {
+    width: 92%;
+    padding: 0.5em;
+    height: 115em;
+    margin-top: 2em;
+    background-color: hsl(0, 0%, 100%, 65%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
