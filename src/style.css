@@ -15,12 +15,15 @@
     align-items: center;
     padding-top: 2em;
 }
-.main img {
+.search-icon {
     position: absolute;
     width: 1.8em;
     height: 1.8em;
     top: 0.35em;
     right: 0.4em;
+}
+.search-icon-off {
+    display: none;
 }
 .main label {
     position: relative;
@@ -29,6 +32,8 @@
     width: 15em;
     height: 3em;
     border-radius: 5px;
+    padding: 0 0.5em;
+    border: var(--myWhite);
 }
 .main div {
     width: 92%;
