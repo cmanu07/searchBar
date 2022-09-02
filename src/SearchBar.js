@@ -7,8 +7,8 @@ import searchIcon from './images/icons8-search-50.png'
 export default function SearchBar ({data}) {
 
     const [cauta, setCauta] = useState(data);
-    let icon = 'search-icon';
-    
+    const [icon, setIcon] = useState('search-icon');
+
     const filtruCautare = (event) => {
         const cuvInput = event.target.value;
         const newFiltru = data.filter((x) => {
@@ -17,6 +17,7 @@ export default function SearchBar ({data}) {
         })
         newFiltru.sort(()=> cuvInput);
         setCauta(newFiltru);
+        (cuvInput.length > 0) ? setIcon('search-icon-off') : setIcon('search-icon');
     }
 
     return (<main className="main">
