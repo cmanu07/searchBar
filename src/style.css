@@ -21,9 +21,11 @@
     height: 1.8em;
     top: 0.35em;
     right: 0.4em;
+    transition: .3s;
 }
 .search-icon-off {
     display: none;
+    transition: .3s;
 }
 .main label {
     position: relative;
