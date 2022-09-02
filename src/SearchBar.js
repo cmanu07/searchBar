@@ -24,10 +24,10 @@ export default function SearchBar ({data}) {
                 {
                     (cauta.length !== 0) ? 
                         <div>{cauta.map((inreg, index) => {
-                            return <p key={index}>{inreg}</p>
+                            return <p key={index} className="inreg">{inreg}</p>
                         })}</div>        :
                         <div>{data.map((inreg, index) => {
-                            return <p key={index}>{inreg}</p>
+                            return <p key={index} className="inreg">{inreg}</p>
                         })}</div>
                 }
             </main>)
